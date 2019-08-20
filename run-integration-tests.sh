@@ -31,7 +31,7 @@ case "$1" in
 esac
 
 if [[ -z "${DOCKER_IMAGE+x}" ]]; then
-    DOCKER_IMAGE="cfidentity/uaa-${DB_IMAGE_NAME}"
+    DOCKER_IMAGE="java11-test"
 fi
 echo "Using docker image: ${DOCKER_IMAGE}"
 docker run --privileged -t -i --shm-size=1G \
